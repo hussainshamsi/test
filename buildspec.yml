@@ -11,3 +11,4 @@ artifacts:
   files:
     - index.js
     - index.html
+    - Dev_Server.html
