@@ -11,7 +11,7 @@ phases:
 artifacts:
   files:
     - index.js
-    - index.html
+    - error.html
     - Dev_Server.html
     - Stg_Server.html
     - Prod_Server.html
