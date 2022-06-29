@@ -6,6 +6,7 @@ phases:
       - npm install -g typescript
   build:
     commands:
+      - aws s3 rm --recursive "s3://${BUCKET}/"
       - tsc index.ts
 artifacts:
   files:
