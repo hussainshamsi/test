@@ -6,7 +6,7 @@ phases:
       - npm install -g typescript
   build:
     commands:
-      - tsc index.js
+      - tsc index.ts
 artifacts:
   files:
     - index.js
