@@ -10,3 +10,4 @@ phases:
 artifacts:
   files:
     - index.js
+    - index.html
