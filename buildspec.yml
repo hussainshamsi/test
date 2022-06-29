@@ -12,3 +12,5 @@ artifacts:
     - index.js
     - index.html
     - Dev_Server.html
+    - Stg_Server.html
+    - Prod_Server.html
