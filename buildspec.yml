@@ -4,10 +4,12 @@ phases:
   install:
     commands:
       - npm install -g typescript
+   pre_build:
+     commands:
+     - aws s3 rm --recursive "s3://${BUCKET}/"
   build:
     commands:
-      - aws s3 rm --recursive "s3://${BUCKET}/"
-      - tsc index.ts
+    - tsc index.ts
 artifacts:
   files:
     - index.js
