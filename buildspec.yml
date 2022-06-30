@@ -5,7 +5,7 @@ phases:
       - npm install -g typescript
   pre_build:
      commands:
-     - mkdir build-output
+     - aws s3api put-object --bucket "s3://${BUCKET}/" --key "test"
      - aws s3 rm --recursive "s3://${BUCKET}/"
   build:
     commands:
